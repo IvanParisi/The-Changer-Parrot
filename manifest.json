@@ -1,0 +1,37 @@
+{
+
+"name":"The Changer Parrot",
+"version":"1.0",
+"manifest_version": 2,
+"description":"Reemplaza una palabra por otra, en cualquier página de Internet",
+
+"browser_action":
+{
+    "default_icon":"icon.png",
+    "default_popup":"popup.html"
+},
+
+
+"content_security_policy": "script-src 'self' https://code.jquery.com https://cdnjs.cloudflare.com https://stackpath.bootstrapcdn.com; object-src 'self'",
+
+"content_scripts": 
+[
+  {
+    "matches": ["*://*/*"], 
+    "js": ["content.js"],
+    "run_at":"document_end"
+  }
+],
+
+"background":
+{
+  "scripts": ["background.js"],
+  "persistent": false
+},
+
+"permissions":
+[
+  "storage"
+]
+
+} 
