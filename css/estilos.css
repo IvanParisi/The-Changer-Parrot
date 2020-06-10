@@ -6,7 +6,7 @@ body{
     background-attachment: fixed;
     
 }
-
+/*FONDO*/
 .fondo{
     background-color: black;      
 }
@@ -18,12 +18,12 @@ body{
     text-align: center;
 
 }
-
+/*PÁRRAFO*/
 .nov1{
     font-family: 'Roboto', sans-serif;
     color: aliceblue;
 }
-
+/*IMAGEN*/
 .parrot{
     display:block;
     margin:auto;
@@ -37,7 +37,7 @@ body{
     justify-content: center;
     
 }
-
+/*BOTÓN RESET*/
 .botonReset{
   background-color: brown;
   font-family: 'Roboto', sans-serif;
@@ -50,7 +50,7 @@ body{
     font-size: 18px;
 
 }
-
+/*BOTÓN CAMBIAR*/
 .boton{
   background-color:cornflowerblue;
   font-family: 'Roboto', sans-serif;
